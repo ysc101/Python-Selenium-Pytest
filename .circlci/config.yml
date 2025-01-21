@@ -26,3 +26,18 @@ jobs:
       - run:
           name: Run Tests
           command: pytest --maxfail=1 --disable-warnings --html=reports/report.html
+
+workflows:
+  run_test_deploy:
+    jobs:
+      - run_script
+      - test:
+          requires:
+            - run_script
+      - deploy:
+          requires:
+            - test
+          filters:
+            branches:
+              only: main
+
