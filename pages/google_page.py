@@ -9,7 +9,7 @@ class GooglePage:
 
 
     def load(self):
-        self.driver.get("https://www.google.co.in/")
+        self.driver.get("https://scholar.google.com/")
 
 
 

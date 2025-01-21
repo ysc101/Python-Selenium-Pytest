@@ -10,5 +10,5 @@ def test_google_search(browser):
     google_page.load()
 
     # Validate the search results
-    assert "Google" in browser.title or "Google" in browser.current_url
+    assert "Google Scholar" in browser.title or "Google Scholar" in browser.current_url
 
