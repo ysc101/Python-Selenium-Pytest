@@ -1,0 +1,4 @@
+selenium>=4.12.0       # For browser automation
+pytest>=7.4.0          # For testing
+pytest-html>=3.4.0     # For generating HTML reports
+
